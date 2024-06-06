@@ -640,8 +640,8 @@ public class Redis {
         set(key, JSON.toJSONString(value));
     }
 
-    public <T> void set(String key, T value, int time) {
-        setV2(key, gson.toJson(value), time);
+    public <T> String set(String key, T value, int time) {
+        return setV2(key, gson.toJson(value), time);
     }
 
     public <T> T get(String key, Class<T> clazz) {

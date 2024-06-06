@@ -30,7 +30,7 @@
     <dependency>
       <groupId>run.mone</groupId>
       <artifactId>dubbo</artifactId>
-      <version>2.7.12-mone-v8-SNAPSHOT</version>
+      <version>2.7.12-mone-v8</version>
       <scope>provided</scope>
       <exclusions>
         <exclusion>
@@ -44,6 +44,10 @@
         <exclusion>
           <artifactId>commons-logging</artifactId>
           <groupId>commons-logging</groupId>
+        </exclusion>
+        <exclusion>
+          <groupId>run.mone</groupId>
+          <artifactId>hera-trace</artifactId>
         </exclusion>
       </exclusions>
     </dependency>

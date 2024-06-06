@@ -29,7 +29,7 @@
         <module>docean-plugin-rocketmq</module>
         <module>docean-plugin-sql</module>
         <module>docean-plugin-test</module>
-        <module>docean-plugin-sentinel</module>
+<!--        <module>docean-plugin-sentinel</module>-->
         <module>docean-plugin-mybatis</module>
         <module>docean-plugin-mybatis-plus</module>
         <module>docean-plugin-datasource</module>
@@ -43,7 +43,7 @@
         <module>docean-plugin-es</module>
         <module>docean-plugin-etcd</module>
         <module>docean-plugin-grpc</module>
-        <module>docean-plugin-dubbo-serverless</module>
+<!--        <module>docean-plugin-dubbo-serverless</module>-->
         <module>docean-plugin-datasource-serverless</module>
         <module>docean-plugin-rpc</module>
         <module>docean-plugin-k8s</module>

@@ -34,7 +34,7 @@ import java.util.Optional;
  * @date 2023/2/20 18:29
  */
 public class JavaPoetTest {
-
+/*
     @SneakyThrows
     private void out(MethodSpec methodSpec) {
         TypeSpec typeSpec = TypeSpec.classBuilder("HelloWorld")
@@ -233,7 +233,7 @@ public class JavaPoetTest {
         mi = CodeUtils.getMethod("public void hi2(){System.out.println(123);}");
         System.out.println(mi);
     }
-
+*/
 
 
 

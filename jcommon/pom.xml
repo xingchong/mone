@@ -37,7 +37,7 @@
         <module>ks3</module>
         <module>test</module>
         <module>docker</module>
-        <module>codegen</module>
+<!--        <module>codegen</module>-->
         <module>jmonitor</module>
         <module>codecheck</module>
         <module>cron</module>

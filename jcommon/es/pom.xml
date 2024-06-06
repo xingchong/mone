@@ -52,7 +52,7 @@
     <dependency>
       <groupId>run.mone</groupId>
       <artifactId>nacos</artifactId>
-      <version>1.4-v1-jdk20-SNAPSHOT</version>
+      <version>1.6.0-jdk21-SNAPSHOT</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
