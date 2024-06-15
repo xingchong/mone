@@ -11,6 +11,7 @@ import run.mone.ai.z.dto.ZKnowledgeBaseFileBlockDTO;
 import run.mone.ai.z.dto.ZKnowledgeBaseFilesDTO;
 import run.mone.local.docean.bo.FileRequest;
 import run.mone.local.docean.service.ZService;
+
 import javax.annotation.Resource;
 import java.util.Collections;
 import java.util.List;
@@ -35,8 +36,8 @@ public class KnowledgeController {
 
     @RequestMapping(path = "/knowledge/file/details", method = "get")
     public Result<List<ZKnowledgeBaseFileBlockDTO>> getKnowledgeFileDetails(@RequestParam("account") String account,
-                                                                     @RequestParam("knowledgeId") Long knowledgeId,
-                                                                     @RequestParam("fileId") Long fileId) {
+                                                                            @RequestParam("knowledgeId") Long knowledgeId,
+                                                                            @RequestParam("fileId") Long fileId) {
         return Result.success(zService.listKnowledgeBaseFileBlocks(knowledgeId, fileId, account));
     }
 
@@ -57,7 +58,7 @@ public class KnowledgeController {
     public Result<Boolean> deleteBlock(@RequestParam("knowledgeId") Long knowledgeId,
                                        @RequestParam("account") String account,
                                        @RequestParam("fileId") Long fileId,
-                                       @RequestParam("blockId") String blockId){
+                                       @RequestParam("blockId") String blockId) {
         return Result.success(zService.deleteKnowledgeBaseFileBlock(knowledgeId, account, fileId, blockId));
     }
 }

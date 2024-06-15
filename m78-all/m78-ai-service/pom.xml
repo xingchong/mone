@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>run.mone</groupId>
+    <artifactId>m78-ai-service</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>m78-api</module>
+        <module>ai-z-api</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <!-- run.mone:common -->
+        <dependency>
+            <groupId>run.mone</groupId>
+            <artifactId>common</artifactId>
+            <version>1.6.0-jdk21-SNAPSHOT</version>
+        </dependency>
+        <!-- run.mone:infra-result -->
+        <dependency>
+            <groupId>run.mone</groupId>
+            <artifactId>infra-result</artifactId>
+            <version>1.6.0-jdk21-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- run.mone:http-docs-annotations -->
+        <dependency>
+            <groupId>run.mone</groupId>
+            <artifactId>http-docs-annotations</artifactId>
+            <version>1.0.0-mone-SNAPSHOT</version>
+        </dependency>
+
+        <!-- org.* -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>5.1.3.RELEASE</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.12.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hibernate.validator</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>7.0.1.Final</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.30</version>
+            <scope>provided</scope>
+        </dependency>
+
+
+    </dependencies>
+
+</project>
