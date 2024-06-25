@@ -38,7 +38,7 @@ public class Main {
 
         String promptName = "prompt.txt";
 
-        String content = Files.readString(Paths.get("/Users/zhangzhiyong/IdeaProjects/goodjava/mone/jcommon/ai/zhipu/src/main/resources/" + promptName));
+        String content = Files.readString(Paths.get("/Users/admin/Documents/git/mi/mone/jcommon/ai/zhipu/src/main/resources/" + promptName));
 
 
         ChatMessage chatMessage = new ChatMessage(ChatMessageRole.USER.value(), content);
