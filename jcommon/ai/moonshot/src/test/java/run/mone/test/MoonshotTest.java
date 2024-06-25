@@ -25,8 +25,9 @@ public class MoonshotTest {
     }
 
     @Test
-    public void test1() {
-        System.out.println(Moonshot.uploadFile(Paths.get("/tmp/vv.png"), "file-extract"));
+    public void testUploadFile() {
+        String filePath = "/Users/admin/Documents/git/mi/mone/jcommon/ai/moonshot/src/main/resources/doc_001.txt";
+        System.out.println(Moonshot.uploadFile(Paths.get(filePath), "file-extract"));
     }
 
     @Test
@@ -36,7 +37,7 @@ public class MoonshotTest {
 
     @Test
     public void testGetFileContent() {
-        System.out.println(Moonshot.getFileContent("co18e6hkqq4ua4e5lcdg"));
+        System.out.println(Moonshot.getFileContent("cpt7e66cp7f2p5159fj0"));
     }
 
 
@@ -47,7 +48,9 @@ public class MoonshotTest {
 
     @Test
     public void testCall() {
-        ChatCompletion data = Moonshot.call(Lists.newArrayList(Message.builder().role("system").content(Moonshot.getFileContent("co18e6hkqq4ua4e5lcdg")).build(), Message.builder().role("user").content("这个系统是什么系统").build()));
+        Message msg1 = Message.builder().role("system").content(Moonshot.getFileContent("cpt7e66cp7f2p5159fj0")).build();
+        Message msg2 = Message.builder().role("user").content("这个是什么").build();
+        ChatCompletion data = Moonshot.call(Lists.newArrayList(msg1, msg2));
         System.out.println(data);
     }
 
