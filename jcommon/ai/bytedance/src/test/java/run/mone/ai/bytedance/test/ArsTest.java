@@ -11,15 +11,22 @@ import java.io.IOException;
 
 public class ArsTest {
 
+    private static final String BYTEDANCE_VOICE_APPID = System.getenv("bytedance_voice_appid");
+
+    private static final String BYTEDANCE_VOICE_TOKEN = System.getenv("bytedance_voice_token");
+
+    private static final String BYTEDANCE_VOICE_CLUSTERID = System.getenv("bytedance_voice_clusterid");
+
+
     @Test
     public void testCall() {
 
         try {
             ArsRequest request = new ArsRequest();
-            request.setAppId("");  // 项目的 appid
-            request.setToken("");  // 项目的 token
-            request.setCluster(""); // 请求的集群
-            String audio_path = "audio.mp3";  // 本地音频文件路径；
+            request.setAppId(BYTEDANCE_VOICE_APPID);  // 项目的 appid
+            request.setToken(BYTEDANCE_VOICE_TOKEN);  // 项目的 token
+            request.setCluster(BYTEDANCE_VOICE_CLUSTERID); // 请求的集群
+            String audio_path = "input/audio.mp3";  // 本地音频文件路径；
 
             File file = new File(audio_path);
             ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
