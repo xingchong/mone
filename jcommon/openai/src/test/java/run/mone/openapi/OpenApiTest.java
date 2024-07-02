@@ -169,8 +169,9 @@ public class OpenApiTest {
     @Test
     public void testCallStream() {
         String key = System.getenv("open_api_key");
+        String openApiHost = System.getenv("open_api_host");
         CountDownLatch latch = new CountDownLatch(1);
-        OpenaiCall.callStream(key, "", "天空为什么是蓝色的", new String[]{}, new StreamListener() {
+        OpenaiCall.callStream(key, openApiHost, "天空为什么是蓝色的", new String[]{}, new StreamListener() {
             @Override
             public void onEvent(String str) {
                 System.out.println(str);
